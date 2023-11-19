@@ -44,7 +44,7 @@ class SurahPage extends StatelessWidget {
                             '$i',
                             textAlign: TextAlign.center,
                             textScaler: TextScaler.linear(i.toString().length <= 2 ? 1 : .8),
-                           // textScaleFactor:i.toString().length <= 2 ? 1 : .8 ,
+                            // textScaleFactor:i.toString().length <= 2 ? 1 : .8 ,
 
                           ),
                         ))
@@ -60,25 +60,25 @@ class SurahPage extends StatelessWidget {
 
   Widget header() {
     return Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-    Text(
-      surah.arabicName,
-      style: const TextStyle(
-        fontFamily: 'Aldhabi',
-        fontSize: 36,
-        fontWeight: FontWeight.bold,
-      ),
-    ),
-    Text(
-      ' ${quran.getBasmala()} ',
-      textDirection: TextDirection.rtl,
-      style: const TextStyle(
-        fontFamily: 'NotoNastaliqUrdu',
-        fontSize: 24,
-      ),
-    ),
-          ],
-        );
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text(
+          surah.arabicName,
+          style: const TextStyle(
+            fontFamily: 'Aldhabi',
+            fontSize: 36,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        Text(
+          ' ${quran.getBasmala()} ',
+          textDirection: TextDirection.rtl,
+          style: const TextStyle(
+            fontFamily: 'NotoNastaliqUrdu',
+            fontSize: 24,
+          ),
+        ),
+      ],
+    );
   }
 }
