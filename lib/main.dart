@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:forqan_app/screens/home.dart';
+import 'package:forqan_app/screens/mainIndex.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.cyanAccent,
       ),
-      home: const HomeScreen(),
+      home: const MainIndex(),
     );
   }
 }

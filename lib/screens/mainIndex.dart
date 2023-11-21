@@ -7,14 +7,14 @@ import 'package:forqan_app/screens/reading_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 //import 'package:google_fonts/google_fonts.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+class MainIndex extends StatefulWidget {
+  const MainIndex({super.key});
 
   @override
-  _HomeScreenState createState() => _HomeScreenState();
+  _MainIndexState createState() => _MainIndexState();
 }
 
-class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
+class _MainIndexState extends State<MainIndex> with TickerProviderStateMixin {
   List<Surah> surahList = [];
   int selectedIndex = 0;
   bool isReverse = false;
